@@ -1,3 +1,4 @@
+import 'package:ecommerce_app_with_admin_panel/features/home/presentation/view/widgets/poster_section.dart';
 import 'package:flutter/material.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -5,8 +6,27 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      children: [],
+    return SafeArea(
+      child: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(20),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                "Hello Sina",
+                style: Theme.of(context).textTheme.displayLarge,
+              ),
+              Text(
+                "Lets gets somethings?",
+                style: Theme.of(context).textTheme.headlineSmall,
+              ),
+              // poster section
+              const PosterSection(),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }

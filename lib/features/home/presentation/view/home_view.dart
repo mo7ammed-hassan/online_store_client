@@ -1,4 +1,5 @@
 import 'package:ecommerce_app_with_admin_panel/features/home/presentation/view/widgets/custom_app_bar.dart';
+import 'package:ecommerce_app_with_admin_panel/core/widgets/custom_navy_bar.dart';
 import 'package:ecommerce_app_with_admin_panel/features/home/presentation/view/widgets/home_view_body.dart';
 import 'package:flutter/material.dart';
 
@@ -11,6 +12,7 @@ class HomeView extends StatelessWidget {
       extendBodyBehindAppBar: true,
       appBar: CustomAppBar(),
       body: HomeViewBody(),
+      bottomNavigationBar: CustomBottomNavyBar(),
     );
   }
 }

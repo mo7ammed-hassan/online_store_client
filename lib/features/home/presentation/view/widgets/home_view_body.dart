@@ -1,4 +1,5 @@
 import 'package:ecommerce_app_with_admin_panel/features/home/presentation/view/widgets/poster_section.dart';
+import 'package:ecommerce_app_with_admin_panel/features/home/presentation/view/widgets/top_category_section.dart';
 import 'package:flutter/material.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -23,6 +24,10 @@ class HomeViewBody extends StatelessWidget {
               ),
               // poster section
               const PosterSection(),
+              // top category section
+              const TopCategorySection(),
+              // product section
+              
             ],
           ),
         ),

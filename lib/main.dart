@@ -1,3 +1,5 @@
+import 'package:ecommerce_app_with_admin_panel/core/utils/app_theme.dart';
+import 'package:ecommerce_app_with_admin_panel/features/auth/login/login_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,11 +14,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'ECommerce',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      //home: ,
+      theme: AppTheme.lightAppTheme,
+      home: const LoginScreen(),
     );
   }
 }

@@ -1,5 +1,5 @@
 import 'package:ecommerce_app_with_admin_panel/core/utils/app_theme.dart';
-import 'package:ecommerce_app_with_admin_panel/features/favorit/presentation/views/favorite_view.dart';
+import 'package:ecommerce_app_with_admin_panel/features/products/presentation/views/products_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'ECommerce',
       theme: AppTheme.lightAppTheme,
-      home: const FavoriteView(),
+      home: const ProductsView(),
     );
   }
 }

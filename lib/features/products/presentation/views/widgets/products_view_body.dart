@@ -13,7 +13,7 @@ class ProductsViewBody extends StatelessWidget {
         slivers: [
           SliverAppBar(
             floating: true,
-            snap: false,
+            snap: true,
             leading: IconButton(
               onPressed: () {
                 Navigator.of(context).pop();

@@ -11,8 +11,8 @@ class CustomFlexibleSpace extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constrains) {
-        var top = constrains.biggest.height -
-            MediaQuery.of(context).padding.top;
+        var top =
+            constrains.biggest.height - MediaQuery.of(context).padding.top;
         return Stack(
           children: [
             Positioned(

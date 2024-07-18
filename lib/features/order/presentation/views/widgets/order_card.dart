@@ -14,9 +14,10 @@ class OrderCard extends StatelessWidget {
       ),
       child: Container(
         padding: const EdgeInsets.all(16),
-        child: const Column(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
+            const Text(
               r'Samsung A53 Mobile $ 1 items',
               style: TextStyle(
                 fontSize: 18,
@@ -24,17 +25,40 @@ class OrderCard extends StatelessWidget {
                 color: AppColor.darkOrange,
               ),
             ),
-             SizedBox(height: 8),
-            Text(
+            const SizedBox(height: 8),
+            const Text(
               'Payment : prepiad',
               style: TextStyle(fontSize: 16),
             ),
-             SizedBox(height: 8),
-             Text(
-                'date',
-                style:  TextStyle(fontSize: 14, color: Colors.grey),
-              ),
-               SizedBox(height: 8),
+            const SizedBox(height: 8),
+            const Text(
+              '2024-05-19t01:14:54:631z',
+              style: TextStyle(fontSize: 14, color: Colors.grey),
+            ),
+            const SizedBox(height: 8),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Expanded(
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(vertical: 8),
+                    decoration: BoxDecoration(
+                      color: AppColor.darkOrange,
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: const Center(
+                      child: Text(
+                        'Processing',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ],
         ),
       ),

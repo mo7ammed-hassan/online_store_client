@@ -37,6 +37,10 @@ dependencies:
   cupertino_icons: ^1.0.6
   flutter_login: ^5.0.0
   bottom_navy_bar: ^6.1.0
+  animations: ^2.0.11
+  smooth_page_indicator: ^1.2.0
+  flutter_rating_bar: ^4.0.1
+  font_awesome_flutter: ^10.7.0
 
 dev_dependencies:
   flutter_test:
@@ -47,7 +51,7 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^3.0.0
+  flutter_lints: ^4.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

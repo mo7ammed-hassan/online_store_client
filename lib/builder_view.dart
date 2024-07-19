@@ -41,9 +41,11 @@ class _BuilderViewState extends State<BuilderView> {
             )
             .toList(),
         onItemSelected: (value) {
-          setState(() {
-            currentIndex = value;
-          });
+          if (currentIndex != value) {
+            setState(() {
+              currentIndex = value;
+            });
+          }
         },
       ),
     );

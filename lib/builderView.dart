@@ -6,14 +6,14 @@ import 'package:ecommerce_app_with_admin_panel/features/home/presentation/view/h
 import 'package:ecommerce_app_with_admin_panel/features/profile/presentation/views/profile_view.dart';
 import 'package:flutter/material.dart';
 
-class MainScreen extends StatefulWidget {
-  const MainScreen({super.key});
+class BuilderView extends StatefulWidget {
+  const BuilderView({super.key});
 
   @override
-  State<MainScreen> createState() => _MainScreenState();
+  State<BuilderView> createState() => _BuilderViewState();
 }
 
-class _MainScreenState extends State<MainScreen> {
+class _BuilderViewState extends State<BuilderView> {
   int currentIndex = 0;
 
   final List<Widget> _views = [

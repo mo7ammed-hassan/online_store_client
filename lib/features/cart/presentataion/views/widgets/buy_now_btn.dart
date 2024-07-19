@@ -15,7 +15,10 @@ class BuyNowButton extends StatelessWidget {
           onPressed: () {
             showCustomBottomSheet(context);
           },
-          child: const Text("Buy Now", style: TextStyle(color: Colors.white)),
+          child: const Text(
+            "Buy Now",
+            style: TextStyle(color: Colors.white),
+          ),
         ),
       ),
     );

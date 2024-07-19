@@ -1,5 +1,4 @@
 import 'package:ecommerce_app_with_admin_panel/core/utils/app_color.dart';
-import 'package:ecommerce_app_with_admin_panel/core/widgets/custom_navy_bar.dart';
 import 'package:ecommerce_app_with_admin_panel/features/profile/presentation/views/widgets/profile_view_body.dart';
 import 'package:flutter/material.dart';
 
@@ -21,7 +20,6 @@ class ProfileView extends StatelessWidget {
         ),
       ),
       body: const ProfileViewBody(),
-      bottomNavigationBar: const CustomBottomNavyBar(),
     );
   }
 }

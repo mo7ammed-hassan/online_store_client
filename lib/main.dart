@@ -1,5 +1,5 @@
 import 'package:ecommerce_app_with_admin_panel/core/utils/app_theme.dart';
-import 'package:ecommerce_app_with_admin_panel/features/home/presentation/view/main_view.dart';
+import 'package:ecommerce_app_with_admin_panel/main_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {

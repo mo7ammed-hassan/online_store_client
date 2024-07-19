@@ -1,3 +1,4 @@
+import 'package:ecommerce_app_with_admin_panel/features/details/presentation/views/details_view.dart';
 import 'package:ecommerce_app_with_admin_panel/features/home/presentation/view/widgets/product_card.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +20,17 @@ class ProductsGridView extends StatelessWidget {
           crossAxisSpacing: 10,
         ),
         itemBuilder: (context, index) {
-          return const ProductCard();
+          return GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const DetailsView(),
+                ),
+              );
+            },
+            child: const ProductCard(),
+          );
         },
       ),
     );

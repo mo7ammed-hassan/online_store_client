@@ -1,4 +1,6 @@
+import 'package:ecommerce_app_with_admin_panel/core/utils/functions/show_custom_btn_sheet.dart';
 import 'package:flutter/material.dart';
+
 class BuyNowButton extends StatelessWidget {
   const BuyNowButton({super.key});
 
@@ -10,7 +12,9 @@ class BuyNowButton extends StatelessWidget {
         padding: const EdgeInsets.only(left: 30, right: 30, bottom: 20),
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(padding: const EdgeInsets.all(20)),
-          onPressed: () {},
+          onPressed: () {
+            showCustomBottomSheet(context);
+          },
           child: const Text("Buy Now", style: TextStyle(color: Colors.white)),
         ),
       ),

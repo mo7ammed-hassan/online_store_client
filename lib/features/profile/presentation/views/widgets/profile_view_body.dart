@@ -1,5 +1,6 @@
 import 'package:ecommerce_app_with_admin_panel/core/widgets/custom_elevetd_btn.dart';
 import 'package:ecommerce_app_with_admin_panel/core/widgets/navigation_title.dart';
+import 'package:ecommerce_app_with_admin_panel/features/address/presentation/views/address_view.dart';
 import 'package:ecommerce_app_with_admin_panel/features/order/presentation/views/order_view.dart';
 import 'package:ecommerce_app_with_admin_panel/features/profile/presentation/views/widgets/open_conatiner_wrapper.dart';
 import 'package:flutter/material.dart';
@@ -39,7 +40,7 @@ class ProfileViewBody extends StatelessWidget {
           ),
           SizedBox(height: 15),
           OpenContainerWrapper(
-            nextScreen: OrderView(),
+            nextScreen: AddressView(),
             child: NavigationTile(
               icon: Icons.location_on,
               title: 'My Addresses',

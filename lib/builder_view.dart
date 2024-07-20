@@ -1,3 +1,4 @@
+import 'package:animations/animations.dart';
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:ecommerce_app_with_admin_panel/core/utils/app_data.dart';
 import 'package:ecommerce_app_with_admin_panel/features/cart/presentataion/views/my_cart_view.dart';
@@ -26,7 +27,21 @@ class _BuilderViewState extends State<BuilderView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: _views[currentIndex],
+      body: PageTransitionSwitcher(
+        duration: const Duration(seconds: 1),
+        transitionBuilder: (
+          Widget child,
+          Animation<double> primaryAnimation,
+          Animation<double> secondaryAnimation,
+        ) {
+          return FadeThroughTransition(
+            animation: primaryAnimation,
+            secondaryAnimation: secondaryAnimation,
+            child: child,
+          );
+        },
+        child: _views[currentIndex],
+      ),
       bottomNavigationBar: BottomNavyBar(
         itemCornerRadius: 10,
         selectedIndex: currentIndex,

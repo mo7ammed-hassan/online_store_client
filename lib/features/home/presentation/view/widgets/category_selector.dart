@@ -1,5 +1,6 @@
 import 'package:ecommerce_app_with_admin_panel/features/home/presentation/view/widgets/category_selector_item.dart';
 import 'package:ecommerce_app_with_admin_panel/features/products/presentation/views/products_view.dart';
+import 'package:ecommerce_app_with_admin_panel/features/profile/presentation/views/widgets/open_conatiner_wrapper.dart';
 import 'package:flutter/material.dart';
 
 class CategorySelector extends StatelessWidget {
@@ -14,16 +15,12 @@ class CategorySelector extends StatelessWidget {
         shrinkWrap: true,
         itemCount: 7,
         itemBuilder: (context, index) {
-          return GestureDetector(
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const ProductsView(),
-                ),
-              );
-            },
-            child: const CategorySelectorItem(),
+          return Container(
+            margin: const EdgeInsets.symmetric(horizontal: 6,vertical: 1),
+            child: const OpenContainerWrapper(
+              nextScreen: ProductsView(),
+              child: CategorySelectorItem(),
+            ),
           );
         },
       ),

@@ -1,5 +1,6 @@
 import 'package:ecommerce_app_with_admin_panel/core/utils/app_theme.dart';
 import 'package:ecommerce_app_with_admin_panel/builder_view.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,6 +13,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      scrollBehavior: const MaterialScrollBehavior().copyWith(
+        dragDevices: {
+          PointerDeviceKind.mouse,
+          PointerDeviceKind.touch,
+        },
+      ),
       debugShowCheckedModeBanner: false,
       title: 'ECommerce',
       theme: AppTheme.lightAppTheme,

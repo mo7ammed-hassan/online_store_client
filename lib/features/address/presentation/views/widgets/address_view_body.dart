@@ -33,7 +33,6 @@ class _AddressViewBodyState extends State<AddressViewBody> {
                     child: AddressForm(),
                   ),
                 ),
-                const AddressForm(),
                 const SizedBox(height: 20),
                 Center(
                   child: ElevatedButton(
